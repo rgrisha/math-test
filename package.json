@@ -1,0 +1,28 @@
+{
+  "name": "math-test",
+  "version": "1.0.0",
+  "description": "Math test with post to Google spreadsheet",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgrisha/math-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rgrisha/math-test/issues"
+  },
+  "homepage": "https://github.com/rgrisha/math-test#readme",
+  "dependencies": {
+    "google-spreadsheet": "^2.0.8",
+    "googleapis": "^44.0.0",
+    "moment": "^2.24.0",
+    "rfr": "^1.2.3"
+  },
+  "devDependencies": {
+    "jasmine": "^3.5.0"
+  }
+}
