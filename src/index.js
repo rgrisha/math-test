@@ -133,12 +133,6 @@ async function runTask(ith, task) {
     readline.on('line', function(line){
       resolve(line);
     });
-    /*
-    readline.question(ith + ". " + task.question, (answerText) => {
-      readline.close()
-      resolve(answerText); 
-    });
-    */
   });
 }
 
@@ -148,7 +142,7 @@ async function runTasks() {
   const sheets = google.sheets({version: 'v4', auth});
 
   let result = newResult();
-  for(i = 1; i <= 2; i++) {
+  for(i = 1; i <= 10; i++) {
     let task = createTask();
     let begin = moment().format();
     let answer = await runTask(i, task);
@@ -170,6 +164,7 @@ function main() {
     })
     .catch((err) => {
       console.log("Klaida: ", err);
+      process.exit();
     });
 }
 
