@@ -19,7 +19,7 @@
   "dependencies": {
     "google-spreadsheet": "^2.0.8",
     "googleapis": "^44.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "rfr": "^1.2.3"
   },
   "devDependencies": {
